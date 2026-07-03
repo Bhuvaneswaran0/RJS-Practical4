@@ -1,7 +1,13 @@
-// Complete the function using object destructuring.
+const students = [
+  { name: "bhuvan", age: 20, grade: "A" },
+  { name: "arun", age: 19, grade: "B" },
+  { name: "daven", age: 21, grade: "A+" }
+];
 
-function getStudentDetails(students) {
-    // Write your code here
-}
-
-module.exports = getStudentDetails;
+// Process the array using object destructuring
+students.forEach(({ name, age, grade }) => {
+  console.log(`Name: ${name}`);
+  console.log(`Age: ${age}`);
+  console.log(`Grade: ${grade}`);
+  console.log("------------------");
+});
